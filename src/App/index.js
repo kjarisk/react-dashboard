@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import Welcome from './WelcomeMessage';
 import './App.css';
 import AppLayout from './AppLayout';
+import AppBar from './AppBar';
 
 const MyButton = styled.div`
   color: green;
@@ -14,7 +15,8 @@ const MyButton = styled.div`
 function App() {
   return (
     <AppLayout>
-      <Welcome />
+      <AppBar />
+        <Welcome />
     </AppLayout>
   );
 }
